@@ -45,7 +45,7 @@ const writeImages = (images) => {
   const imagesSrc = [];
   for (const image of images) {
     const filename = `${new Date().getTime().toString()}.jpg`;
-    imagesSrc.push(`http://${process.env.EXPO_PUBLIC_API_URL}/public/${filename}`);
+    imagesSrc.push(`public/${filename}`);
     fs.writeFile(
       `./public/${filename}`,
       image.replace("data:image/jpeg;base64,", ""),
@@ -122,7 +122,9 @@ app.get("/rooms", (req, res) => {
   const rooms = db.prepare(stmt).all();
 
   for (const room of rooms) {
-    room.images = JSON.parse(room.images);
+    room.images = JSON.parse(room.images).map(
+      (src) => `http://${process.env.EXPO_PUBLIC_API_URL}/${src}`,
+    );
     room.author = db
       .prepare(`SELECT id, username FROM users WHERE id='${room.authorId}'`)
       .get();

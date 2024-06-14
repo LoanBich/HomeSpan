@@ -1,0 +1,113 @@
+import { StyleSheet } from "react-native";
+
+export const globalStyles = StyleSheet.create({
+  headerRight: {
+    width: 150,
+    paddingHorizontal: 5,
+  },
+  item: {
+    flexDirection: "row",
+    alignItems: "center",
+    height: 150,
+    width: "100%",
+    marginVertical: 10,
+    borderWidth: 1,
+    padding: 10,
+    borderRadius: 5,
+    borderColor: "#ddd",
+  },
+
+  button: {
+    backgroundColor: "#182978",
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 5,
+  },
+
+  textButton: {
+    color: "#fff",
+  },
+
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "4%",
+    backgroundColor: "#fff",
+    width: "100%",
+  },
+  title: {
+    fontSize: 25,
+    fontWeight: "bold",
+  },
+  titleBackground: {
+    backgroundColor: "#ACBFE6",
+    width: "100%",
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 16,
+    marginBottom: 8,
+    borderRadius: 5,
+  },
+  inputContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    width: "100%",
+  },
+  input: {
+    flex: 1,
+    height: 50,
+    marginVertical: 10,
+    borderWidth: 1,
+    padding: 10,
+    borderRadius: 5,
+    borderColor: "#ddd",
+  },
+  inputTitle: {
+    height: 50,
+    width: "100%",
+    marginVertical: 10,
+    borderWidth: 1,
+    padding: 10,
+    borderRadius: 5,
+    borderColor: "#ddd",
+  },
+  inputAddress: {
+    height: 50,
+    width: "100%",
+    marginVertical: 10,
+    borderWidth: 1,
+    padding: 10,
+    borderRadius: 5,
+    borderColor: "#ddd",
+  },
+  inputInformation: {
+    height: 100,
+    width: "100%",
+    marginVertical: 10,
+    borderWidth: 1,
+    padding: 10,
+    borderRadius: 5,
+    borderColor: "#ddd",
+  },
+  inputImage: {
+    height: 60,
+    width: "100%",
+    marginVertical: 10,
+    borderWidth: 1,
+    padding: 10,
+    borderRadius: 5,
+    borderColor: "#ddd",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  icon: {
+    position: "absolute",
+    right: "2.5%",
+    padding: "2.5%",
+  },
+});
